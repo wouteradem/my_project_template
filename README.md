@@ -25,9 +25,11 @@ Set?
 
 #### <i class="icon-pencil"></i> Download Drupal 8
 
-We are all set to download Drupal 8 and start a local PHP server. Fir this command:
+We are all set to download Drupal 8 and start a local PHP server. Fire this command:
 
-* ``` $ drupal chain --file=~/.console/chain/quick-start.yml ```
+* ``` $ drupal chain --file=quick-start.yml ```
+
+**Drupal docroot lives in drupal8.dev!**
 
 > **Note:**
 
@@ -40,7 +42,7 @@ Go!
 
 Now we are set to install Drupal 8. Supposing **you are able to setup your local Database connection** go to your site URL in your browser e.g. http://127.0.0.1:8088/"
 
-Now use the UI and select the ```my_profile``` profile and let the magic happen.
+Enable our custom profile by invoking this command ```$ drush en -y my_profile``` in the directory **drupal8.dev**. Now use the UI and select the ```my_profile``` profile and let the magic happen.
 
 After the site is installed it looks kind of bad! But go to ```/admin/config/development/configuration``` and scroll down and just click import. You'll see Drupal importing all its required site configuration.
 

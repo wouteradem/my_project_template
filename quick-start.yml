@@ -3,6 +3,7 @@ commands:
   - command: site:new
     arguments:
       directory: drupal8.dev
-      version: 8.1.8
+    options:
+      latest: 'true'
 # Start php built-in server
   - command: server
