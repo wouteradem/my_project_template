@@ -17,8 +17,8 @@ I'm a very useful tool! You need me so please install me. Instructions can be fo
 
 I will be your project folder and the new home for your Drupal 8 site. Don't delete me unless you want to start from scratch or you're leaving this project.
 
-``` $ git clone https://github.com/wouteradem/my_project_template ```
-``` $ cd my_project_template ```
+* ``` $ git clone https://github.com/wouteradem/my_project_template ```
+* ``` $ cd my_project_template ```
 
 Set?
 ----------------
@@ -27,7 +27,7 @@ Set?
 
 We are all set to download Drupal 8 and start a local PHP server. Fir this command:
 
-``` $ drupal chain --file=~/.console/chain/quick-start.yml ```
+* ``` $ drupal chain --file=~/.console/chain/quick-start.yml ```
 
 > **Note:**
 
