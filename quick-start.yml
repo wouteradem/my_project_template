@@ -1,0 +1,8 @@
+commands:
+# Download Drupal
+  - command: site:new
+    arguments:
+      directory: drupal8.dev
+      version: 8.1.8
+# Start php built-in server
+  - command: server
