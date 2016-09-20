@@ -42,7 +42,12 @@ Go!
 
 Now we are set to install Drupal 8. Supposing **you are able to setup your local Database connection** go to your site URL in your browser e.g. http://127.0.0.1:8088/"
 
-Enable our custom profile by invoking this command ```$ drush en -y my_profile``` in the directory **drupal8.dev**. Now use the UI and select the ```my_profile``` profile and let the magic happen.
+Copy our custom profile by invoking this command ```$ cp -Rf my_profile drupal8.dev/profiles``` to the directory **drupal8.dev**. Now use the UI and select the ```my_profile``` profile and let the magic happen. You need to fill in the required fields but the values don't matter.
+
+For the moment you now need to apply two hacks:
+* Open ```settings.php``` and add the line ```$config_directories['sync'] = 'profiles/my_profile/config/sync';``` at the bottom and save.
+* Open ```core.extension.yml```
+* Replace the word ```standard``` with ```my_profile``` and save the file
 
 After the site is installed it looks kind of bad! But go to ```/admin/config/development/configuration``` and scroll down and just click import. You'll see Drupal importing all its required site configuration.
 
