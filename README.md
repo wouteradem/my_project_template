@@ -25,9 +25,11 @@ Set?
 
 #### <i class="icon-pencil"></i> Download Drupal 8
 
-We are all set to download Drupal 8 and start a local PHP server. Fir this command:
+We are all set to download Drupal 8 and start a local PHP server. Fire this command:
 
-* ``` $ drupal chain --file=~/.console/chain/quick-start.yml ```
+* ``` $ drupal chain --file=quick-start.yml ```
+
+**Drupal docroot lives in drupal8.dev!**
 
 > **Note:**
 
