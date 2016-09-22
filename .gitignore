@@ -1,2 +1,5 @@
 # User-specific stuff:
 .idea/
+
+# Drupal 8 docroot
+drupal8.dev/

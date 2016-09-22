@@ -30,9 +30,11 @@ function my_profile_install() {
   }
 
   // Update settings.php
-  $settings['config_directories'][CONFIG_SYNC_DIRECTORY] = (object) [
-    'value' => $sync_directory,
-    'required' => TRUE,
-  ];
+  $settings['config_directories'] = array(
+    CONFIG_SYNC_DIRECTORY => (object) array(
+      'value' => $sync_directory,
+      'required' => TRUE,
+    ),
+  );
   $config_directories[CONFIG_SYNC_DIRECTORY] = $sync_directory;
 }
